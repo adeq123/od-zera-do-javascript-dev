@@ -4,8 +4,8 @@
  * Single linked list element stores has two fields. The first one stores 
  * the value of the element and the latter stores the reference to the next
  * element on the list.
- * @param {*} theArray, Array, input for building the linked list
- * @returns, Array, an Array of linked list elements if successfuly built. 
+ * @param {Array} theArray,  input for building the linked list
+ * @returns {Array}, an Array of linked list elements if successfuly built. 
  * null otherwise.
  */
 let arrayToList = function (theArray) {
@@ -73,7 +73,12 @@ let prepend = function (value, list) {
   return newElement;
 }
 
-
+/**
+ * The function returns the element on the list pointed by number parameter
+ * @param {*} list , list to be searched
+ * @param {*} number , the position of the element to be found
+ * @returns {number}, value of the element pointed or null if not found.
+ */
 let nth = function (list, number) {
   if (list == null || number == null) {
     return null
